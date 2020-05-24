@@ -1,6 +1,7 @@
 #import context  # Ensures paho is in PYTHONPATH
 import paho.mqtt.client as mqtt
 
+from .controls import turn_on_pump
 
 def on_connect(mqttc, obj, flags, rc):
     print("rc: " + str(rc))
